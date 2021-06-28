@@ -29,7 +29,7 @@ $conn=mysqli_connect($url,$username,$password,$db);
                  
                   $sql="UPDATE `arm-control` SET `Motor1` = '$motor1',`Motor2` = '$motor2',`Motor3` = '$motor3',`Motor4` = '$motor4',`Motor5` = '$motor5',`Motor6` = '$motor6',`State` = 1 WHERE ID = '$ID';";   
                   if(mysqli_query($conn,$sql)){
-                    echo 'Successfully Done';
+                    header('Location:information.php');
                 }else{
                     echo 'error: '.mysqli_error($conn);
                 }
@@ -38,7 +38,7 @@ $conn=mysqli_connect($url,$username,$password,$db);
                   //insert here
                   $sql="INSERT INTO `arm-control` (`ID`, `Motor1`, `Motor2`, `Motor3`, `Motor4`,`Motor5`,`Motor6`,`State`) VALUES (NULL, '$motor1', '$motor2', '$motor3', '$motor4','$motor5', '$motor6',1)";
                   if(mysqli_query($conn,$sql)){
-                    echo 'Successfully Done';
+                    header('Location:information.php');
                 }else{
                     echo 'error: '.mysqli_error($conn);
                 }
@@ -56,7 +56,7 @@ $conn=mysqli_connect($url,$username,$password,$db);
                   
                     $sql="UPDATE `arm-control` SET `Motor1` = '$motor1',`Motor2` = '$motor2',`Motor3` = '$motor3',`Motor4` = '$motor4',`Motor5` = '$motor5',`Motor6` = '$motor6',`State` = 0 WHERE ID = '$ID';"; 
                     if(mysqli_query($conn,$sql)){
-                        echo 'Successfully Done';
+                        header('Location:information.php');
                     }else{
                         echo 'error: '.mysqli_error($conn);
                     }
@@ -66,7 +66,7 @@ $conn=mysqli_connect($url,$username,$password,$db);
                   $sql="INSERT INTO `arm-control` (`ID`, `Motor1`, `Motor2`, `Motor3`, `Motor4`,`Motor5`,`Motor6`,`State`) VALUES (NULL, '$motor1', '$motor2', '$motor3', '$motor4','$motor5','$motor6',0)";
                 
                   if(mysqli_query($conn,$sql)){
-                    echo 'Successfully Done';
+                    header('Location:information.php');
                 }else{
                     echo 'error: '.mysqli_error($conn);
                 }
