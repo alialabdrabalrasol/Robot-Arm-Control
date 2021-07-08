@@ -11,6 +11,7 @@
     
     <div>
     <h4>
+      <p ><span>Arm:</span></p>
       <?php
       $url = "localhost";
       $username = "root";
@@ -24,7 +25,7 @@
         $sql = "SELECT * FROM `arm-control`";
         $result = mysqli_query($conn, $sql);
         if (mysqli_num_rows($result) > 0) {
-          //update here
+         
           while($row = mysqli_fetch_assoc($result)) {
             $motor1=$row['Motor1'];
             $motor2=$row['Motor2'];
@@ -65,6 +66,51 @@
        
   
       ?>
+    </h4>
+    <h4>
+    <p ><span >Base:</span> </p>
+    <?php
+      $url = "localhost";
+      $username = "root";
+      $password = "";
+      $db = "robot_database";
+      
+      $conn=mysqli_connect($url,$username,$password,$db);
+          if(!$conn){
+              die('Could not Connect');
+        }
+        $sql = "SELECT * FROM `base-control`";
+        $result = mysqli_query($conn, $sql);
+        if (mysqli_num_rows($result) > 0) {
+         
+          while($row = mysqli_fetch_assoc($result)) {
+            $action=$row['action'];
+            
+
+           
+               echo
+                "
+            
+                <p><span>Action : $action </span></p>
+              
+                
+            
+                ";
+           
+           
+           }
+        } else {
+         
+              echo '<h1>No Record Found</h1>';
+          
+          
+        }
+      
+     
+       
+  
+      ?>
+
     </h4>
     </div>
   </body>
