@@ -33,7 +33,7 @@
 
 ## Choosing one of the above options will send the action to the table that holds values of contolling the base. Finally , that value is read and used on the information page
 
-# Chatbot Integration:
+# Chatbot-Integration:
 
 ## This project uses IBM Watson to create an IBM Watson assistant. The Assistant is then integrated to to a web interface which is the base. The assistant is called whenever the user chooses to interact with it.
 
