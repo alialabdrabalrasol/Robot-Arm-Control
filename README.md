@@ -31,4 +31,17 @@
   - RIGHT to move right
   - STOP to stop
 
-## Choosing one of the above options will send the action to the table that holds values of contolling the base . Finally , that value is read and used on the information page
+## Choosing one of the above options will send the action to the table that holds values of contolling the base. Finally , that value is read and used on the information page
+
+# Chatbot Integration:
+
+## This project uses IBM Watson to create an IBM Watson assistant. The Assistant is then integrated to to a web interface which is the base. The assistant is called whenever the user chooses to interact with it.
+
+# How Does it Work ?
+
+## The user clicks on the bottom right chat icon, then the user starts interacting with the bot. whenever the user types anything, the bot start responing to the user accordingly. If the user asks the bot something which it does not understand, the bot can learn through things that the user had entered with the help of the user. through choosing what had been entered as:
+
+- Intent
+- Entity
+
+## Adding them can help the bot through the process of communicating with the user smoothely and usefully.
