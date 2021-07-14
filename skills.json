@@ -958,6 +958,9 @@
           "text": "Hey you"
         },
         {
+          "text": "Hi"
+        },
+        {
           "text": "Hi advisor"
         },
         {
@@ -1078,6 +1081,9 @@
           "text": "I want a joke"
         },
         {
+          "text": "make me laugh"
+        },
+        {
           "text": "One more joke"
         },
         {
@@ -1177,6 +1183,9 @@
           "text": "How cool is this?"
         },
         {
+          "text": "I appreciate it"
+        },
+        {
           "text": "I like what you did there! :)"
         },
         {
@@ -1190,6 +1199,9 @@
         },
         {
           "text": "Thank you"
+        },
+        {
+          "text": "thank you for making me laugh"
         },
         {
           "text": "This is good"
@@ -1345,8 +1357,92 @@
       },
       "conditions": "anything_else",
       "dialog_node": "Anything else",
-      "previous_sibling": "Welcome",
+      "previous_sibling": "node_1_1626261757396",
       "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How do you open a banana? With a mon-key."
+              },
+              {
+                "text": "Which is faster, hot or cold? Hot, because you can catch cold."
+              },
+              {
+                "text": "Where does Batman go to the bathroom? The batroom."
+              },
+              {
+                "text": "What do you call a fake noodle? An impasta"
+              },
+              {
+                "text": "I'm so good at sleeping I can do it with my eyes closed!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#General_Jokes",
+      "dialog_node": "node_1_1626261011242",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey There !"
+              },
+              {
+                "text": "Yoooo !"
+              },
+              {
+                "text": "Wassap !"
+              },
+              {
+                "text": "Hello Hello :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#General_Greetings",
+      "dialog_node": "node_1_1626261757396",
+      "previous_sibling": "node_4_1626261500171"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I always try my best"
+              },
+              {
+                "text": "Yes sir !"
+              },
+              {
+                "text": "Glad I made you satisfied"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#General_Positive_Feedback",
+      "dialog_node": "node_4_1626261500171",
+      "previous_sibling": "node_1_1626261011242"
     },
     {
       "type": "standard",
@@ -1356,7 +1452,7 @@
           {
             "values": [
               {
-                "text": "Hello. How can I help you?"
+                "text": "Hey ! What can I do for you today ?"
               }
             ],
             "response_type": "text",
